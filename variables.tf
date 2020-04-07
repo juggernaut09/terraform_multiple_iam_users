@@ -5,6 +5,12 @@ variable "user_names" {
 }
 
 
+variable "give_teja_cloudwatch_full_access" {
+    description = "This value decides whether the iam_policy with cloudwatch_full_access will be attached to iam_user teja or not"
+    type = bool
+}
+
+
 
 variable "hero_thousand_names" {
     description = "map"

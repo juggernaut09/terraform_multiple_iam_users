@@ -44,3 +44,10 @@ output "bios" {
 output "upper_roles" {
     value = {for name, role in var.hero_thousand_names : upper(name) => upper(role)}
 }
+
+
+
+output "teja_arn" {
+    value = values(aws_iam_user.example)[2].name
+    description = "The arns of teja"
+}
